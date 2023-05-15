@@ -21,7 +21,7 @@ const Navbar = () => {
         </nav>
         
         <nav>
-            <CustomLink href='/' target={"_blank"}>targeta</CustomLink>
+            <CustomLink href='/' target={"_blank"}>targetas</CustomLink>
             <CustomLink href='/' target={"_blank"}>T</CustomLink>
             <CustomLink href='/' target={"_blank"}>T</CustomLink>
             <CustomLink href='/' target={"_blank"}>T</CustomLink>
