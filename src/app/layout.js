@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { Montserrat } from "next/font/google"
+import Footer from '@/components/Footer'
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
       <body className={`${montserrat.variable} font-mont`}>
       <Navbar />
         {children}
+        <Footer />
         </body>
     </html>
   )

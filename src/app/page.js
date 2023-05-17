@@ -1,7 +1,10 @@
+import Home from "./home/page";
 
 
-export default function Home() {
+export default function Main() {
   return (
-    <main className="bg-light w-full min-h-screen">Hola</main>
+    <main className="bg-light w-full min-h-screen">
+      <Home />
+    </main>
   )
 }
