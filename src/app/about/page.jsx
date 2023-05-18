@@ -6,7 +6,7 @@ const page = () => {
   return (
     <>
       <Head>
-        <title>About Seba</title>
+        <title>About Sebas</title>
         <meta name="description" content="fullstack dev" />
       </Head>
       <main>
