@@ -2,7 +2,7 @@ import React from 'react'
 
 const LiIcon = () => {
   return (
-    <div>LiIcon</div>
+    <div>LiIcons</div>
   )
 }
 
