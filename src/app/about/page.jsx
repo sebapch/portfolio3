@@ -8,6 +8,7 @@ import profilePic from '../../../public/images/profile/rojo.png'
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 
 const AnimatedNumber = ({value}) => {
   const ref = useRef(0)
@@ -101,6 +102,7 @@ const page = () => {
           </div>
           <Skills />
           <Experience />
+          <Education />
         </Layout>
       </main>
     </>
