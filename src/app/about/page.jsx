@@ -37,7 +37,7 @@ const page = () => {
   return (
     <>
       <Head>
-        <title>About Sebas</title>
+        <title>About Sebastian</title>
         <meta name="description" content="fullstack dev" />
       </Head>
       <main className="flex w-full flex-col items-center justify-center dark:text-light ">
