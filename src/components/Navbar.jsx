@@ -29,7 +29,7 @@ const CustomLink = ({ href, title, className = "" }) => {
 
 const CustomMobileLink = ({ href, title, className = "", toggle }) => {
   
-  const pathname = usePathname()
+  const router = useRouter()
   
 
   const handleClick = () =>{
@@ -41,7 +41,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
     <button href={href} className={`${className} relative group text-light dark:text-dark my-2`} onClick={handleClick}>
       {title}
       <span className={`h-[1px] inline-block w-0 bg-light absolute left-0 -bottom-0.5 
-      group-hover:w-full transition-[width] ease duration-300 dark:bg-light ${pathname === href ? 'w-full' : 'w-0'} dark:bg-dark`}>
+      group-hover:w-full transition-[width] ease duration-300 dark:bg-dark ${router.asPath === href ? 'w-full' : 'w-0'} dark:bg-dark`}>
         &nbsp;
       </span>
     </button>
@@ -74,7 +74,7 @@ const Navbar = () => {
           <CustomLink href="/articles" title="Articles" className="mr-4" />
         </nav>
 
-        <nav className="flex items-center justify-center flex-wrap">
+        <nav className="flex items-center justify-center flex-wrap mt-2">
           <motion.a href="https://twitter.com" target={"_blank"}
           whileHover={{ y: -2}}
           whileTap={{scale: 0.9}}
