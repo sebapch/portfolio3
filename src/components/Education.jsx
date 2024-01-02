@@ -50,33 +50,20 @@ const Education = () => {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 ml-4 xs:ml-2">
           <Details
+            type="Bachelor in systems analyst"
+            time="2016-2018"
+            place="Da Vinci - School of Art and Technology. Buenos Aires - Argentina"
+            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
+            Intelligence."
+          />
+         {/*  <Details
             type="Bachelor Of Science In Computer Science"
             time="2016-2020"
             place="Massachusetts Institute Of Technology (MIT)"
             info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
             Intelligence."
-          />
-          <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence."
-          />
-          <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence."
-          />
-          <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence."
-          />
+          /> */}
+          
           
   
 
