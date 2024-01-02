@@ -14,10 +14,10 @@ const Home = () => {
   return (
     <div className='flex items-center text-dark w-full min-h-screen dark:text-light'>
         <TransitionEffect />
-        <Layout className='pt-0 md:p-16 sm:pt-8'>
+        <Layout className='pt-0 md:p-16 sm:pt-0'>
             <div className="flex items-center justify-between w-full lg:flex-col">
                 <div className='w-1/2 md:w-full flex justify-center'>
-                    <Image src={profilePic} alt='Developer' className='w-1/2  h-auto lg:hidden md:inline-block md:w-full rounded-lg' priority 
+                    <Image src={profilePic} alt='Developer' className='w-1/2  h-auto lg:hidden md:inline-block md:w-full sm:h-[50%] sm:w-[70%] sm:pb-4 rounded-lg' priority 
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                             />
                 </div>
