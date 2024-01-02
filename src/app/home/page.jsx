@@ -2,7 +2,7 @@
 import Layout from '@/components/Layout'
 import Image from 'next/image'
 import React from 'react'
-import profilePic from '../../../public/images/profile/rojo.png'
+import profilePic from '../../../public/images/profile/enhanced-image.png'
 import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import { LinkArrow } from '@/components/Icons'
@@ -16,8 +16,8 @@ const Home = () => {
         <TransitionEffect />
         <Layout className='pt-0 md:p-16 sm:pt-8'>
             <div className="flex items-center justify-between w-full lg:flex-col">
-                <div className='w-1/2 md:w-full'>
-                    <Image src={profilePic} alt='Developer' className='w-1/2 h-auto lg:hidden md:inline-block md:w-full' priority 
+                <div className='w-1/2 md:w-full flex justify-center'>
+                    <Image src={profilePic} alt='Developer' className='w-1/2  h-auto lg:hidden md:inline-block md:w-full rounded-lg' priority 
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                             />
                 </div>
