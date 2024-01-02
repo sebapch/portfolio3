@@ -4,7 +4,7 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
-import profilePic from "../../../public/images/profile/rojo.png";
+import profilePic from "../../../public/images/profile/enhanced-image.png";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
@@ -54,23 +54,21 @@ const page = () => {
                 Biography
               </h2>
               <p className="font-medium ">
-                Hi, I'm CodeBucks, a web developer and UI/UX designer with a
-                passion for creating beautiful, functional, and user-centered
-                digital experiences. With 4 years of experience in the field. I
-                am always looking for new and innovative ways to bring my
-                clients' visions to life.
+                Hi, I'm Sebastian, a full stack developer and web enthusiast
+                with a passion for building scalable, reliable, and
+                user-friendly web applications. With 4 years of experience in
+                the field, I am always looking for new and exciting challenges
+                to tackle and learn from.
               </p>
               <p className=" my-4 font-medium ">
-                I believe that design is about more than just making things look
-                pretty it's about solving problems and creating intuitive,
-                enjoyable experiences for users.
+                I believe that development is about more than just writing code,
+                it’s about creating solutions and delivering value for users.
               </p>
               <p className="my-4 font-medium ">
-                Whether I'm working on a website, mobile app, or other digital
-                product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+                Whether I’m working on the front-end, back-end, or both, I bring
+                my dedication to quality, performance, and security to every
+                project I work on. I look forward to the opportunity to bring my
+                skills and enthusiasm to your next project.
               </p>
             </div>
 
@@ -79,7 +77,7 @@ const page = () => {
               <Image
                 src={profilePic}
                 alt="Sebastian"
-                className="w-full h-auto rounded-2xl"
+                className="w-full h-1/2 rounded-2xl sm:w-full"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 priority
               />
@@ -88,7 +86,7 @@ const page = () => {
             <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="iniline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumber value={50} />+
+                  <AnimatedNumber value={10} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   Satisfied clients
@@ -96,7 +94,7 @@ const page = () => {
               </div>
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="iniline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumber value={40} />+
+                  <AnimatedNumber value={15} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   Projects completed
@@ -112,7 +110,6 @@ const page = () => {
                 </h2>
               </div>
             </div>
-
           </div>
           <Skills />
           <Experience />
