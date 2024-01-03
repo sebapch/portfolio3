@@ -208,7 +208,7 @@ const page = () => {
                  You can easily book a session or send a message through the page."
                 link="https://github.com/sebapch"
                 github=""
-                type="https://github.com/sebapch"
+                type="Featured Project"
               />
             </div>
             {/* <div className="col-span-6 sm:col-span-12">
