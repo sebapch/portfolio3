@@ -8,7 +8,7 @@ import Link from "next/link";
 import React from "react";
 import project1 from "../../../public/images/projects/crypto-screener-cover-image.jpg";
 import project6551 from "../../../public/images/projects/6551Visualizer.png";
-import projectAgenteAI from "../../../public/images/projects/AgenteAI2.png";
+import projectAgenteAI from "../../../public/images/projects/agenteAI22.png";
 import projectCertify from "../../../public/images/projects/CertifyForever.png";
 import projectGalicia from "../../../public/images/projects/GALICIADEMO.png";
 import projectMK from "../../../public/images/projects/MKFitness.png";
