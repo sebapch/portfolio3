@@ -4,7 +4,7 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
-import profilePic from "../../../public/images/profile/enhanced-image.png";
+import profilePic from "../../../public/images/profile/enhanced2.png";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
@@ -56,7 +56,7 @@ const page = () => {
               <p className="font-medium ">
                 Hi, I'm Sebastian, a full stack developer and web enthusiast
                 with a passion for building scalable, reliable, and
-                user-friendly web applications. With 4 years of experience in
+                user-friendly web applications. With more than 2 years of experience in
                 the field, I am always looking for new and exciting challenges
                 to tackle and learn from.
               </p>
