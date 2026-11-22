@@ -1,63 +1,21 @@
-'use client'
-import Layout from '@/components/Layout'
 import Image from 'next/image'
-import React from 'react'
-import profilePic from '../../../public/images/profile/enhanced-image.png'
-import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
-import { LinkArrow } from '@/components/Icons'
-import HireMe from '@/components/HireMe'
-import lightBulb from '../../../public/images/svgs/miscellaneous_icons_1.svg'
-import TransitionEffect from '@/components/TransitionEffect'
+import portrait from '../../../public/images/profile/enhanced2.png'
 
-const Home = () => {
-  return (
-    <div className='flex items-center text-dark w-full min-h-screen dark:text-light'>
-        <TransitionEffect />
-        <Layout className='pt-0 md:p-16 sm:pt-0'>
-            <div className="flex items-center justify-between w-full lg:flex-col">
-                <div className='w-1/2 md:w-full flex justify-center'>
-                    <Image src={profilePic} alt='Developer' className='w-1/2  h-auto lg:hidden md:inline-block md:w-full sm:h-[50%] sm:w-[70%] sm:pb-4 rounded-lg' priority 
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-                            />
-                </div>
-                <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
-                    
-                    <AnimatedText text='Turning The Future Into Reality With Code And Design.' className='!text-6xl !text-left 
-                    xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl
-                    '/>
-                    <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
-                    As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
-                    Explore my latest projects and articles, showcasing my expertise in React, Next, AWS and much more.
-                    </p>
-                    <div className='flex items-center self-start mt-2 lg:self-center'>
-                        <Link href='/dummy.pdf' target={'_blank'}
-                        className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light
-                         hover:text-dark border-2 border-solid border-transparent hover:border-dark
-                         dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
-                         md:p-2 md:px-4 md:text-base
-                         '
-                        download={true}
-                        >
-                            Resume <LinkArrow className={'w-6 ml-1'}/>
-                        </Link>
-                        <Link href='mailto:snmedina91@gmail.com' target={'_blank'}
-                        className='ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base'
-                        >
-                            Contact
-                        </Link>
-                         
-                    </div>
-                </div>
-            </div>
-        </Layout>
-
-        <HireMe />
-        <div className='absolute right-8 bottom-8 inline-block w-24 md:hidden'>
-            <Image src={lightBulb} alt='' className='w-full h-auto'/>
-        </div>
-    </div>
-  )
+export default function Home() {
+  return <main id="main-content" className="page-shell">
+    <section className="hero" aria-labelledby="hero-title">
+      <div className="hero-copy">
+        <p className="eyebrow">Software Engineer · Argentina</p>
+        <h1 id="hero-title">Sebastián<br />Nicolás Medina<span className="accent">.</span></h1>
+        <h2 className="hero-subtitle">Applied AI &amp; systems integration</h2>
+        <p className="intro">I build interfaces that connect financial products, AI services and operational workflows.</p>
+        <p className="supporting">Nearly five years at Action Fintech, working with React, Next.js and TypeScript. Hands-on experience with Amazon Bedrock, n8n, REST APIs and automated regression testing.</p>
+        <div className="actions"><a className="button" href="/Sebastian-Medina-Resume-EN.pdf" download>Download résumé <span aria-hidden="true">↗</span></a><a className="text-link" href="mailto:snmedina91@gmail.com">Get in touch</a></div>
+        <p className="small-links"><a href="/Sebastian-Medina-CV-ES.pdf" download lang="es">CV en español</a><span aria-hidden="true"> / </span><Link href="/projects">Explore my experience</Link></p>
+      </div>
+      <div className="portrait-frame"><Image src={portrait} alt="Illustrated portrait of Sebastián Medina" priority sizes="(max-width: 767px) 85vw, 35vw" /></div>
+    </section>
+    <section className="focus-strip" aria-label="Areas of experience"><span>Financial applications</span><span>AI integrations</span><span>API workflows</span><span>Automated testing</span></section>
+  </main>
 }
-
-export default Home
